@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab3.MainPage">
+
+
+
+    <StackLayout BackgroundColor="LightBlue">
+        <Grid>
+            <Button Text="Open JSON"
+                        BackgroundColor="#3498db"
+                        TextColor="White"
+                        FontSize="26"
+                        CornerRadius="10"
+                        Padding="15,10"
+                        Clicked="OpenJSON_ButtonClicked"
+                        WidthRequest="200"/>
+
+            <Button Text="i"
+                        BackgroundColor="Black"
+                        TextColor="White"
+                        FontSize="50"
+                        FontAttributes="Bold"
+                        CornerRadius="10"
+                        Padding="15,10"
+                        Clicked="Info_ButtonClicked"
+                        HeightRequest="100"
+                        WidthRequest="100"
+                        HorizontalOptions="End"
+                        VerticalOptions="End"/>
+        </Grid>
+        <StackLayout HorizontalOptions="CenterAndExpand" Padding="20">
+            <Grid HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <StackLayout Grid.Row="0" Grid.Column="0">
+                    <Label Text=""
+                           FontSize="20"
+                           FontAttributes="Bold"/>
+                    <Button Text="Clear"
+                            BackgroundColor="#3498db"
+                            TextColor="White"
+                            FontSize="26"
+                            CornerRadius="10"
+                            Padding="15,10"
+                            Clicked="Clear_ButtonClicked"
+                            WidthRequest="200"
+                            HeightRequest="50"
+                            Margin="0,0,45,0"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="0" Grid.Column="1">
+                    <Label Text="Name"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   TextColor="#3498db" />
+                    <Picker x:Name="NamePicker" 
+                             
+                            ItemsSource="{Binding NameOptions}" 
+                            SelectedItem="{Binding FilterGraduate.Name}" 
+                            BackgroundColor="#3498db" 
+                            Margin="0,0,45,0"
+                            FontSize="20"
+                            WidthRequest="200"
+                            HeightRequest="50"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="0" Grid.Column="2" >
+                    <Label Text="Faculty"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="#3498db" />
+                    <Picker x:Name="FacultyPicker" 
+                        ItemsSource="{Binding FacultyOptions}" 
+                        SelectedItem="{Binding FilterGraduate.Faculty}" 
+                        BackgroundColor="#3498db" 
+                        Margin="0,0,45,0"
+                        FontSize="20"
+                        WidthRequest="200"
+                        HeightRequest="50"/>    
+                </StackLayout>
+
+                <StackLayout Grid.Row="0" Grid.Column="3" >
+                    <Label Text="Specialty"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="#3498db" />       
+                    <Picker x:Name="SpecialtyPicker"
+                        ItemsSource="{Binding SpecialtyOptions}" 
+                        SelectedItem="{Binding FilterGraduate.Specialty}" 
+                        BackgroundColor="#3498db" 
+                        Margin="0,0,45,0"
+                        FontSize="20"
+                        WidthRequest="200"
+                        HeightRequest="50"/>
+                </StackLayout>
+                
+                <StackLayout Grid.Row="0" Grid.Column="4" >
+                    <Label Text="Graduation Year"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="#3498db" />   
+                    <Picker x:Name="GradYearPicker" 
+                        ItemsSource="{Binding GradYearOptions}" 
+                        SelectedItem="{Binding FilterGraduate.GradYear}" 
+                        BackgroundColor="#3498db"
+                        Margin="0,0,45,0"
+                        FontSize="20"
+                        WidthRequest="200"
+                        HeightRequest="50"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="0" Grid.Column="5">
+                    <Label Text=""
+                           FontSize="20"
+                           FontAttributes="Bold"/>
+                    <Button Text="Search"
+                            BackgroundColor="#3498db"
+                            TextColor="White"
+                            FontSize="26"
+                            CornerRadius="10"
+                            Padding="15,10"
+                            Clicked="Search_ButtonClicked"
+                            WidthRequest="200"
+                            HeightRequest="50"
+                            />
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+     
+        <StackLayout HorizontalOptions="CenterAndExpand" Padding="20">
+            <Grid HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Button Grid.Row ="0" 
+                        Grid.Column="0" 
+                        Text="Save JSON"
+                        BackgroundColor="#3498db"
+                        TextColor="White"
+                        FontSize="26"
+                        CornerRadius="10"
+                        Padding="15,10"
+                        Clicked="SaveJSON_ButtonClicked"
+                        WidthRequest="200"
+                        Margin="0,0,30,0"/>
+
+                <Button Grid.Row ="0" 
+                        Grid.Column="1" 
+                        Text="Reset"
+                        BackgroundColor="#3498db"
+                        TextColor="White"
+                        FontSize="26"
+                        CornerRadius="10"
+                        Padding="15,10"
+                        Clicked="Reset_ButtonClicked"
+                        WidthRequest="200"
+                        Margin="0,0,30,0"/>
+
+                <Button Grid.Row ="0" 
+                        Grid.Column="2" 
+                        Text="Add"
+                        BackgroundColor="#3498db"
+                        TextColor="White"
+                        FontSize="26"
+                        CornerRadius="10"
+                        Padding="15,10"
+                        Clicked="Add_ButtonClicked"
+                        WidthRequest="200"
+                        Margin="0,0,30,0"/>
+
+            </Grid>
+        </StackLayout>
+
+        <ListView x:Name="graduateListView" ItemsSource="{Binding GraduateObjects}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <AbsoluteLayout>
+                            <Frame  BackgroundColor="SkyBlue" 
+                                    Margin="10" 
+                                    BorderColor="SkyBlue" 
+                                    AbsoluteLayout.LayoutBounds="0, 0, 1, 105"
+                                    AbsoluteLayout.LayoutFlags="WidthProportional">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="45" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="2" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="2" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="2" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <ImageButton Grid.Row="0" Grid.Column="0" 
+                                                 VerticalOptions="End" 
+                                                 HorizontalOptions="Start" 
+                                                 WidthRequest="20" 
+                                                 HeightRequest="20" 
+                                                 Source="redact3.png" 
+                                                 Clicked="RedactName_ButtonClicked"
+                                                 Margin="15,0,0,0">
+                                        <ImageButton.CommandParameter>
+                                            <Binding Path="." />
+                                        </ImageButton.CommandParameter>
+                                    </ImageButton>
+
+                                    <StackLayout AbsoluteLayout.LayoutFlags="PositionProportional">
+                                        <Label Text="Name" TextColor="#3498db" HorizontalOptions="Center" />
+                                        <Label Text="{Binding Name}" TextColor="#2874a6" HorizontalOptions="Center" />
+                                    </StackLayout>
+
+                                    <BoxView Color="#5dade2" HeightRequest="45" WidthRequest="2" Grid.Row="0" Grid.Column="1" />
+
+                                    <ImageButton Grid.Row="0" Grid.Column="2" 
+                                         VerticalOptions="End" 
+                                         HorizontalOptions="Start" 
+                                         WidthRequest="20" 
+                                         HeightRequest="20" 
+                                         Source="redact3.png" 
+                                         Clicked="RedactFaculty_ButtonClicked"
+                                         Margin="15,0,0,0">        
+                                        <ImageButton.CommandParameter>
+                                            <Binding Path="." />
+                                        </ImageButton.CommandParameter>
+                                    </ImageButton>
+                                    
+                                    <StackLayout Grid.Row="0" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center">
+                                        <Label Text="Faculty" TextColor="#3498db" HorizontalOptions="Center" />
+                                        <Label Text="{Binding Faculty}" TextColor="#2874a6" HorizontalOptions="Center" />
+                                    </StackLayout>
+
+                                    <BoxView Color="#5dade2" HeightRequest="45" WidthRequest="2" Grid.Row="0" Grid.Column="3"/>
+
+                                    <ImageButton Grid.Row="0" Grid.Column="4" 
+                                         VerticalOptions="End" 
+                                         HorizontalOptions="Start" 
+                                         WidthRequest="20" 
+                                         HeightRequest="20" 
+                                         Source="redact3.png" 
+                                         Clicked="RedactSpecialty_ButtonClicked"
+                                         Margin="15,0,0,0"> 
+                                        <ImageButton.CommandParameter>
+                                            <Binding Path="." />
+                                        </ImageButton.CommandParameter>
+                                    </ImageButton>
+                                    
+                                    <StackLayout Grid.Row="0" Grid.Column="4" VerticalOptions="Center" HorizontalOptions="Center">
+                                        <Label Text="Specialty" TextColor="#3498db" HorizontalOptions="Center" />
+                                        <Label Text="{Binding Specialty}" TextColor="#2874a6" HorizontalOptions="Center" />
+                                    </StackLayout>
+
+                                    <BoxView Color="#5dade2" HeightRequest="45" WidthRequest="2" Grid.Row="0" Grid.Column="5" />
+
+                                    <ImageButton Grid.Row="0" Grid.Column="6" 
+                                         VerticalOptions="End" 
+                                         HorizontalOptions="Start" 
+                                         WidthRequest="20" 
+                                         HeightRequest="20" 
+                                         Source="redact3.png" 
+                                         Clicked="RedactGradYear_ButtonClicked"
+                                         Margin="15,0,0,0"> 
+                                        <ImageButton.CommandParameter>
+                                            <Binding Path="." />
+                                        </ImageButton.CommandParameter>
+                                    </ImageButton>
+                                    
+                                    <StackLayout Grid.Row="0" Grid.Column="6" VerticalOptions="Center" HorizontalOptions="Center">
+                                        <Label Text="Graduation Year" TextColor="#3498db" HorizontalOptions="Center" />
+                                        <Label Text="{Binding GradYear}" TextColor="#2874a6" HorizontalOptions="Center" />
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+
+                            <ImageButton
+                                AbsoluteLayout.LayoutBounds="1, 0, -1, -1"
+                                WidthRequest="20"
+                                HeightRequest="20"
+                                AbsoluteLayout.LayoutFlags="PositionProportional"
+                                Aspect="AspectFit"
+                                Source="close.png"
+                                Clicked="Close_ButtonClicked">
+                                <ImageButton.CommandParameter>
+                                    <Binding Path="." />
+                                </ImageButton.CommandParameter>
+                            </ImageButton>
+
+                        </AbsoluteLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

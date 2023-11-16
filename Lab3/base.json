@@ -1,0 +1,368 @@
+[
+  {
+    "Name": "Alice",
+    "Faculty": "Computer Science",
+    "Specialty": "Software Engineering",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Bob",
+    "Faculty": "Electrical Engineering",
+    "Specialty": "Power Systems",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Charlie",
+    "Faculty": "Business Administration",
+    "Specialty": "Marketing",
+    "GradYear": 2024
+  },
+  {
+    "Name": "David",
+    "Faculty": "Physics",
+    "Specialty": "Quantum Mechanics",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Eva",
+    "Faculty": "Chemistry",
+    "Specialty": "Organic Chemistry",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Frank",
+    "Faculty": "Mechanical Engineering",
+    "Specialty": "Mechatronics",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Grace",
+    "Faculty": "Environmental Science",
+    "Specialty": "Sustainability",
+    "GradYear": 2024
+  },
+  {
+    "Name": "Hank",
+    "Faculty": "Mathematics",
+    "Specialty": "Applied Mathematics",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Ivy",
+    "Faculty": "Social Work",
+    "Specialty": "Community Outreach",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Jack",
+    "Faculty": "Biomedical Engineering",
+    "Specialty": "Medical Devices",
+    "GradYear": 2024
+  },
+  {
+    "Name": "Katherine",
+    "Faculty": "History",
+    "Specialty": "Ancient Civilizations",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Leo",
+    "Faculty": "Economics",
+    "Specialty": "Macroeconomics",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Mia",
+    "Faculty": "Communications",
+    "Specialty": "Digital Media",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Nathan",
+    "Faculty": "Political Science",
+    "Specialty": "International Relations",
+    "GradYear": 2024
+  },
+  {
+    "Name": "Olivia",
+    "Faculty": "Nursing",
+    "Specialty": "Pediatric Nursing",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Paul",
+    "Faculty": "Astronomy",
+    "Specialty": "Astrophysics",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Quinn",
+    "Faculty": "Psychology",
+    "Specialty": "Cognitive Psychology",
+    "GradYear": 2024
+  },
+  {
+    "Name": "Ryan",
+    "Faculty": "Mechanical Engineering",
+    "Specialty": "Robotics",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Samantha",
+    "Faculty": "Biology",
+    "Specialty": "Genetics",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Tom",
+    "Faculty": "Civil Engineering",
+    "Specialty": "Structural Engineering",
+    "GradYear": 2024
+  },
+  {
+    "Name": "Uma",
+    "Faculty": "Film Studies",
+    "Specialty": "Cinematography",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Xander",
+    "Faculty": "Data Science",
+    "Specialty": "Machine Learning",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Yvonne",
+    "Faculty": "Chemical Engineering",
+    "Specialty": "Process Control",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Zane",
+    "Faculty": "Health Sciences",
+    "Specialty": "Public Health",
+    "GradYear": 2024
+  },
+  {
+    "Name": "Wendy",
+    "Faculty": "Linguistics",
+    "Specialty": "Computational Linguistics",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Victor",
+    "Faculty": "Geology",
+    "Specialty": "Seismology",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Ulysses",
+    "Faculty": "Materials Science",
+    "Specialty": "Nanotechnology",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Tina",
+    "Faculty": "Fashion Design",
+    "Specialty": "Textile Arts",
+    "GradYear": 2024
+  },
+  {
+    "Name": "Samuel",
+    "Faculty": "Music",
+    "Specialty": "Composition",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Rachel",
+    "Faculty": "Psychiatry",
+    "Specialty": "Child and Adolescent Psychiatry",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Quincy",
+    "Faculty": "Sports Science",
+    "Specialty": "Exercise Physiology",
+    "GradYear": 2024
+  },
+  {
+    "Name": "Penny",
+    "Faculty": "Graphic Design",
+    "Specialty": "Illustration",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Oscar",
+    "Faculty": "Political Science",
+    "Specialty": "Public Policy",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Nina",
+    "Faculty": "Culinary Arts",
+    "Specialty": "Pastry Chef",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Max",
+    "Faculty": "Environmental Engineering",
+    "Specialty": "Water Resources",
+    "GradYear": 2024
+  },
+  {
+    "Name": "Liam",
+    "Faculty": "Art History",
+    "Specialty": "Modern Art",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Kylie",
+    "Faculty": "Neuroscience",
+    "Specialty": "Neuropharmacology",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Justin",
+    "Faculty": "Urban Planning",
+    "Specialty": "Sustainable Development",
+    "GradYear": 2024
+  },
+  {
+    "Name": "Holly",
+    "Faculty": "English Literature",
+    "Specialty": "Creative Writing",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Gavin",
+    "Faculty": "Computer Engineering",
+    "Specialty": "Embedded Systems",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Fiona",
+    "Faculty": "Human Resources",
+    "Specialty": "Employee Relations",
+    "GradYear": 2024
+  },
+  {
+    "Name": "Alex",
+    "Faculty": "Business Administration",
+    "Specialty": "Marketing",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Brooke",
+    "Faculty": "Business Administration",
+    "Specialty": "Management",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Carter",
+    "Faculty": "Computer Science",
+    "Specialty": "Software Engineering",
+    "GradYear": 2024
+  },
+  {
+    "Name": "Danielle",
+    "Faculty": "Computer Science",
+    "Specialty": "Database Management",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Eli",
+    "Faculty": "Electrical Engineering",
+    "Specialty": "Electronics",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Faith",
+    "Faculty": "Electrical Engineering",
+    "Specialty": "Control Systems",
+    "GradYear": 2024
+  },
+  {
+    "Name": "Gavin",
+    "Faculty": "Mechanical Engineering",
+    "Specialty": "Mechanical Design",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Haley",
+    "Faculty": "Mechanical Engineering",
+    "Specialty": "Thermodynamics",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Isaac",
+    "Faculty": "Physics",
+    "Specialty": "Classical Mechanics",
+    "GradYear": 2024
+  },
+  {
+    "Name": "Jasmine",
+    "Faculty": "Physics",
+    "Specialty": "Astrophysics",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Kyle",
+    "Faculty": "Chemistry",
+    "Specialty": "Analytical Chemistry",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Lily",
+    "Faculty": "Chemistry",
+    "Specialty": "Inorganic Chemistry",
+    "GradYear": 2024
+  },
+  {
+    "Name": "Mason",
+    "Faculty": "Mathematics",
+    "Specialty": "Statistics",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Natalie",
+    "Faculty": "Mathematics",
+    "Specialty": "Number Theory",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Owen",
+    "Faculty": "Environmental Science",
+    "Specialty": "Environmental Policy",
+    "GradYear": 2024
+  },
+  {
+    "Name": "Paige",
+    "Faculty": "Environmental Science",
+    "Specialty": "Climate Change",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Quentin",
+    "Faculty": "Civil Engineering",
+    "Specialty": "Structural Engineering",
+    "GradYear": 2023
+  },
+  {
+    "Name": "Rachel",
+    "Faculty": "Civil Engineering",
+    "Specialty": "Transportation Engineering",
+    "GradYear": 2024
+  },
+  {
+    "Name": "Samuel",
+    "Faculty": "Biology",
+    "Specialty": "Cell Biology",
+    "GradYear": 2022
+  },
+  {
+    "Name": "Sophia",
+    "Faculty": "Biology",
+    "Specialty": "Genetics",
+    "GradYear": 2023
+  }
+]
